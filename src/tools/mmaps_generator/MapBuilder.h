@@ -54,7 +54,7 @@ namespace Pathfinding
                        bool skipContinents      = false,
                        bool skipJunkMaps        = true,
                        bool skipBattlegrounds   = true,
-                       bool hiResHeightmaps     = true,
+                       bool hiResHeightmaps     = false,
                        bool debugOutput         = false);
 
             ~MapBuilder();

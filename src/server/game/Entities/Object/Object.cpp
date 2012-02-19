@@ -2419,7 +2419,6 @@ void WorldObject::GetCreatureListWithEntryInGrid(std::list<Creature*>& creatureL
     cell.Visit(pair, visitor, *(this->GetMap()), *this, maxSearchRange);
 }
 
-
 namespace Trinity
 {
     class NearUsedPosDo
@@ -2491,7 +2490,6 @@ namespace Trinity
     };
 }                                                           // namespace Trinity
 
-
 //===================================================================================================
 
 void WorldObject::GetNearPoint2D(float &x, float &y, float distance2d, float absAngle) const
@@ -2509,7 +2507,7 @@ void WorldObject::GetNearPoint(WorldObject const* searcher, float &x, float &y, 
     const float init_z =  z = GetPositionZ();
     UpdateAllowedPositionZ(x, y, z);
 
-   /* 
+   /*
     // if detection disabled, return first point
     if (!sWorld->getBoolConfig(CONFIG_DETECT_POS_COLLISION))
     {
